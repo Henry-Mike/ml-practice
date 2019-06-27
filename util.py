@@ -17,7 +17,8 @@ def plot_history(history, names=None):
         plt.xlabel('Epochs')
         plt.ylabel(name)
         plt.legend()
-
+        
+    plt.tight_layout()
     plt.show()
 
 
@@ -38,7 +39,7 @@ def compare_history(history1, history2):
         plt.plot(data2[val_name], 'r', label='Val {} h2'.format(name))
 
         plt.xlabel('Epochs')
-        plt.ylabel('name')
+        plt.ylabel(name)
         plt.legend()
 
     plt.tight_layout()
